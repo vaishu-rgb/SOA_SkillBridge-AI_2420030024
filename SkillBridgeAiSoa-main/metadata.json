@@ -1,0 +1,6 @@
+{
+  "name": "SkillBridge",
+  "description": "Career guidance platform helping students assess career readiness, identify skill gaps, build adaptive learning roadmaps, and match with qualified internships and jobs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

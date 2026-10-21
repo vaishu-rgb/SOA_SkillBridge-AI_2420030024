@@ -1,0 +1,297 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* Header */
+
+.dashboard-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+.profile-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111827;
+  color: white;
+  font-weight: 700;
+}
+
+/* Cards */
+
+.overview-grid {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-label {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.career-card h2 {
+  margin: 12px 0 8px;
+  font-size: 28px;
+}
+
+.card-subtitle {
+  color: #6b7280;
+}
+
+/* Readiness */
+
+.readiness-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.readiness-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  border: 10px solid #6366f1;
+}
+
+.readiness-circle span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.readiness-content h3 {
+  margin: 0 0 6px;
+}
+
+.readiness-content p {
+  margin: 0;
+  color: #6b7280;
+}
+
+/* Sections */
+
+.section-card {
+  max-width: 1144px;
+  margin: 0 auto 24px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.section-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+/* Skill gaps */
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.skill-info span {
+  font-weight: 600;
+}
+
+.skill-info strong {
+  color: #6366f1;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6366f1;
+  border-radius: 20px;
+}
+
+/* Career plan */
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-item {
+  display: grid;
+  grid-template-columns: 35px 1fr auto;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.plan-item:last-child {
+  border-bottom: none;
+}
+
+.plan-icon {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.completed .plan-icon {
+  color: #16a34a;
+}
+
+.plan-item > span:nth-child(2) {
+  font-weight: 600;
+}
+
+.plan-status {
+  font-size: 13px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.plan-status.pending {
+  color: #6366f1;
+}
+
+/* Opportunities */
+
+.opportunity-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.opportunity-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.opportunity-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  font-size: 24px;
+}
+
+.opportunity-main h3 {
+  margin: 0 0 6px;
+}
+
+.opportunity-main p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.opportunity-readiness {
+  text-align: right;
+}
+
+.opportunity-readiness span {
+  display: block;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.opportunity-readiness strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 24px;
+  color: #16a34a;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 24px;
+  }
+
+  .opportunity-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .opportunity-readiness {
+    text-align: left;
+  }
+
+  .plan-item {
+    grid-template-columns: 30px 1fr;
+    gap: 5px;
+  }
+
+  .plan-status {
+    grid-column: 2;
+  }
+}
